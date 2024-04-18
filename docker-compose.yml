@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+# We probably want backend here first
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
+    ports:
+      - 3000:3000
+    expose:
+      - 3000
