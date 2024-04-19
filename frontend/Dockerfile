@@ -1,6 +1,6 @@
 # We need to build shit here
 
-FROM node:latest
+FROM node:18-alpine
 
 WORKDIR /app
 
@@ -16,4 +16,4 @@ EXPOSE 3000
 RUN npm run build
 
 # Start the app
-CMD ["npm", "start"]
+CMD ["npm", "run", "dev"]
