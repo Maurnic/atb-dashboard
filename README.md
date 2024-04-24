@@ -15,12 +15,13 @@ npm run dev
 ## Linting
 For linting purposes we use Trunk. It's a comprehensive package containing several linters.
 
-**1. Install trunk from vscode marketplace**
+**1. Install Trunk from vscode marketplace** 
 
 Then you can run:
 
 ```bash
 trunk check --all
+trunk fmt
 ```
 
 ## Docker
@@ -31,12 +32,12 @@ We use docker to create runnable images of our website.
 Open the docker desktop daemon, and then run the following command from the root of our project
 
 ```bash
-docker-compose -up --build
+docker-compose up --build
 ```
 
 ## Python virtual environment
 
-When wotking with the backend code of our project, you should use a virtual environment.
+When working with the backend code of our project, you should use a virtual environment.
 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the live website.
