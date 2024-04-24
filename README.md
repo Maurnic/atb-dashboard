@@ -13,13 +13,25 @@ npm run dev
 ```
 
 ## Linting
-For linting purposes we use Trunk. It's a comprehensive package containing several linters. 
+For linting purposes we use Trunk. It's a comprehensive package containing several linters.
+
 **1. Install trunk from vscode marketplace**
 
 Then you can run:
 
 ```bash
 trunk check --all
+```
+
+## Docker
+We use docker to create runnable images of our website.
+
+**Firstly, download the docker engine from:** [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
+
+Open the docker desktop daemon, and then run the following command from the root of our project
+
+```bash
+docker-compose -up --build
 ```
 
 ## Python virtual environment
